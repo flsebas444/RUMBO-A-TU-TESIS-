@@ -77,10 +77,19 @@
         
     <h2>Todas las modalidades de titulación</h2>
 
+
+    <input 
+type="text" 
+id="buscador" 
+placeholder="Buscar modalidad..." 
+onkeyup="buscarModalidad()"
+class="buscador">
+
+
     <div class="product-content">
 
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Tesis.webp" alt="">
             <h3>Tesis</h3>
             <div class="price">
@@ -89,7 +98,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Texto Publicado.jpg" alt="">
             <h3>Texto publicado</h3>
             <div class="price">
@@ -98,7 +107,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Tesina.jpg" alt="">
             <h3>Tesina</h3>
             <div class="price">
@@ -107,7 +116,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Recuperación de experiencia Laboral.webp" alt="">
             <h3>Recuperación de experiencia laboral</h3>
             <div class="price">
@@ -116,7 +125,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Historia de vida.jpg" alt="">
             <h3>Historia de vida</h3>
             <div class="price">
@@ -125,7 +134,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Analisis de testimonio.jpg" alt="">
             <h3>Análisis de testimonio</h3>
             <div class="price">
@@ -134,7 +143,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Trayectoria formativa.jpeg" alt="">
             <h3>Trayectoria formativa</h3>
             <div class="price">
@@ -143,7 +152,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Ensayo.webp" alt="">
             <h3>Ensayo</h3>
             <div class="price">
@@ -152,7 +161,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Monografia.jpg" alt="">
             <h3>Monografía</h3>
             <div class="price">
@@ -161,7 +170,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Informe academico.avif" alt="">
             <h3>Informe académico</h3>
             <div class="price">
@@ -170,7 +179,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Proyecto de intervención.png" alt="">
             <h3>Proyecto de intervención</h3>
             <div class="price">
@@ -179,7 +188,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Proyecto de gestion escolar.avif" alt="">
             <h3>Proyecto de gestión escolar</h3>
             <div class="price">
@@ -188,7 +197,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Proyecto pedagogico de accion docente.webp" alt="">
             <h3>Proyecto pedagógico de acción docente</h3>
             <div class="price">
@@ -197,7 +206,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Innovacion educativa.jpg" alt="">
             <h3>Innovación educativa</h3>
             <div class="price">
@@ -206,7 +215,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Desarrollo educativo.webp" alt="">
             <h3>Desarrollo educativo</h3>
             <div class="price">
@@ -215,7 +224,7 @@
             </div>
         </div>
 
-        <div class="product-1">
+        <div class="product-1 animar">
             <img src="Imagenes/Trayectoria profesional.jpg" alt="">
             <h3>Trayectoria profesional</h3>
             <div class="price">
@@ -228,21 +237,62 @@
 </main>
 
 
-    <section class="contact container">
 
-        <div class="contact-content">
 
-            <h3>¡Mandanos tu opinion para seguir mejorando!</h3>
-            <form>
+    
+   <section class="contact container">
 
-                <input type="email" placeholder="Escribe tu correo"> 
-                <input type="submit" class="btn-3" value="Enviar">
+<div class="contact-content">
 
-            </form>
+<h3>¡Déjanos tu opinión para seguir mejorando!</h3>
 
-        </div>
+<form action="https://formsubmit.co/210920048@alumnos.upn.mx" method="POST">
 
-    </section>
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+
+<input type="email" name="correo" placeholder="Tu correo electrónico" required>
+
+<textarea 
+name="mensaje" 
+placeholder="Escribe aquí tu opinión o sugerencia sobre la página..." 
+required></textarea>
+
+<input type="submit" class="btn-3" value="Enviar opinión">
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SECCIÓN DUDAS ================= -->
+
+<section class="dudas container">
+
+<h2>¿Tienes dudas sobre tu titulación?</h2>
+
+<p>
+Si tienes preguntas sobre el protocolo, las modalidades de titulación o el proceso de egreso,
+puedes enviarnos tu duda y con gusto te orientaremos.
+</p>
+
+<form action="https://formsubmit.co/210920048@alumnos.upn.mx" method="POST">
+
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+
+<input type="email" name="correo" placeholder="Tu correo electrónico" required>
+
+<textarea name="mensaje" placeholder="Escribe aquí tu duda..." required></textarea>
+
+<button type="submit" class="btn-3">Enviar duda</button>
+
+</form>
+
+</section>
+
+
 
     <footer class="footer container">
 
@@ -264,7 +314,55 @@
 
     </footer>
     
-    
+    <script>
+
+const elementos = document.querySelectorAll('.animar');
+
+function mostrarElementos(){
+
+const alturaPantalla = window.innerHeight;
+
+elementos.forEach(elemento =>{
+
+const distancia = elemento.getBoundingClientRect().top;
+
+if(distancia < alturaPantalla - 100){
+elemento.classList.add("visible");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", mostrarElementos);
+mostrarElementos();
+
+</script>
+
+<script>
+
+function buscarModalidad(){
+
+let input = document.getElementById("buscador").value.toLowerCase();
+let modalidades = document.getElementsByClassName("product-1");
+
+for(let i=0;i<modalidades.length;i++){
+
+let texto = modalidades[i].innerText.toLowerCase();
+
+if(texto.includes(input)){
+modalidades[i].style.display="block";
+}else{
+modalidades[i].style.display="none";
+}
+
+}
+
+}
+
+</script>
+
+
 
 </body>
 

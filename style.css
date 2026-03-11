@@ -152,7 +152,14 @@ h2{
     background-color: #2a223a;
     border-radius: 15px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.product-1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
 
 .product-1 img{
     width: 100%;
@@ -180,9 +187,9 @@ h3{
 /* ================= PROTOCOLO DESTACADO ================= */
 
 .protocolo-destacado {
-    grid-column: 1 / -1;      /* ocupa toda la fila */
+    grid-column: 1 / -1;
     max-width: 380px;
-    margin: 0 auto 60px auto; /* centrado */
+    margin: 0 auto 60px auto;
     text-align: center;
     border: 2px solid #FF5A2C;
 }
@@ -191,6 +198,43 @@ h3{
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+}
+
+/* ================= SECCION DUDAS ================= */
+
+.dudas{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.dudas p{
+    color:#E0E0E0;
+    margin-bottom:40px;
+    font-size:17px;
+}
+
+.dudas form{
+    display:flex;
+    flex-direction:column;
+    max-width:600px;
+    margin:auto;
+}
+
+.dudas input{
+    margin-bottom:20px;
+}
+
+.dudas textarea{
+    padding:18px 25px;
+    background-color:#3f3456;
+    border:0;
+    border-radius:25px;
+    outline:none;
+    margin-bottom:20px;
+    color:#FFFFFF;
+    font-size:17px;
+    resize:none;
+    height:140px;
 }
 
 /* ================= CONTACTO ================= */
@@ -208,8 +252,10 @@ h3{
 
 form{
     display: flex;
-    justify-content: center;
+   flex-direction: column;
+    align-items: center;
     margin-top: 20px;
+    gap: 20px;
 }
 
 input{
@@ -221,7 +267,25 @@ input{
     margin-right: 10px;
     color: #FFFFFF;
     font-size: 17px;
+    width: 100%;
+    max-width: 500px;
+
 }
+
+textarea{
+    padding: 18px 25px;
+    background-color: #3f3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 17px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
 
 ::placeholder{
     color: #E0E0E0;
@@ -337,4 +401,68 @@ input{
     .link ul{
         margin-top: 20px;
     }
+
+
+
+.dudas{
+padding:80px 0;
+text-align:center;
+}
+
+.dudas p{
+color:#E0E0E0;
+margin-bottom:30px;
+}
+
+.dudas form{
+display:flex;
+flex-direction:column;
+max-width:600px;
+margin:auto;
+}
+
+.dudas textarea{
+padding:18px 25px;
+background-color:#3f3456;
+border:0;
+border-radius:25px;
+outline:none;
+margin-bottom:20px;
+color:#FFFFFF;
+font-size:17px;
+resize:none;
+height:120px;
+}
+
+.product-1{
+    background-color: #2a223a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+
+
+/* ================= BUSCADOR ================= */
+
+.buscador{
+    display:block;
+    margin: 0 auto 40px auto;
+    padding:15px 25px;
+    width:300px;
+    border-radius:25px;
+    border:none;
+    background-color:#3f3456;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+
+
+
 }

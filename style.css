@@ -57,17 +57,34 @@ img {
     float: left;
 }
 
+
+
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
     color: #FFFFFF;
     font-weight: 600;
-    display: block;
+    display: inline-block;
+
+    border: 2px solid #FF5A2C;
+    border-radius: 30px;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
+
 .menu .navbar ul li a:hover {
-    color: #FF5A2C;
+    background-color: #FF5A2C;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 90, 44, 0.5);
 }
+
+
+.menu .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
 
 #menu{
     display: none;
@@ -84,10 +101,14 @@ img {
 
 .header-content{
     display: flex;
+     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .header-txt{
-    flex-basis: 50%;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .header-txt h1 {
@@ -109,6 +130,10 @@ img {
 
 .butons {
    display: flex; 
+   gap: 30px;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   justify-content: center;
 }
 
 /* ================= BOTONES ================= */
@@ -123,14 +148,44 @@ img {
     color: #FFFFFF;
 }
 
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #FF5A2C;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 90, 44, 0.4);
+}
+
+
+
+
 .btn-1:hover{
-   background-color: #FF5A2C; 
+   background-color: #FF5A2C;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 90, 44, 0.6); 
 }
 
 .btn-2 {
     padding: 5px 25px;
     background-color: #FF5A2C;
     margin-right: 0px;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
+.btn-3 {
+    background-color: #FF5A2C;
+    cursor: pointer;
+    margin-right: 0;
+    border-radius: 25px;
+    color: #FFFFFF;
 }
 
 /* ================= PRODUCTOS / MODALIDADES ================= */
@@ -482,7 +537,35 @@ height:120px;
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  padding: 10px;
+  min-width: 260px;
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -490,5 +573,12 @@ height:120px;
 }
 
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown:hover .dropdown-content {
   display: flex;
 }
+

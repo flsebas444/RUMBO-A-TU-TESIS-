@@ -1,381 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUMBO A TU TESIS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía de modalidades y proceso de titulación de la Licenciatura en Administración Educativa de la UPN.">
+  <title>Rumbo a tu tesis | Guía de titulación</title>
 
-<meta property="og:title" content="Rumbo a tu tesis - Repositorio de apoyo">
-<meta property="og:description" content="Repositorio de apoyo para estudiantes del Área Académica 1 de Administración Educativa de la UPN.">
-<meta property="og:image" content="https://raw.githubusercontent.com/flsebas444/RUMBO-A-TU-TESIS-/main/Portada del LINK.jpg">
-<meta property="og:url" content="https://flsebas444.github.io/RUMBO-A-TU-TESIS-/">
-<meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <a class="skip-link" href="#modalidades">Saltar a modalidades</a>
 
-    <header class="header">
+  <!-- MENÚ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">✦</span>
+        <span>RUMBO <small>A TU TESIS</small></span>
+      </a>
 
-        <div class="menu container">
-            <a href="#"class=logo>¡RUMBO A TU TESIS!</a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="Imagenes/menu.png" class="menu-icono" alt="menu">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="Documentos PDF/Reglamento general para titulación.pdf">Reglamento General para la Titulacion</a></li>
-                    <li><a href="Documentos PDF/Libro Verde.pdf">Libro Verde</a></li>
-                    <li><a href="Documentos PDF/Libro Azul.pdf">Libro Azul</a></li>
-                    <li><a href="area1.upnvirtual.edu.mx">Area Academica 1</a></li>
-                </ul>
- 
-            </nav>
+      <button id="navToggle" class="nav-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mainNav">☰</button>
 
-        </div>
-
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Consulta aquí tus <span> opciones de titulación </span> <br> favorita </h1>
-                <p>
-                Este sitio reúne la información sobre todas las opciones y modalidades de titulación de la Licenciatura en Administración Educativa. 
-                Una guía rápida para orientarte en tu camino profesional
-                </p>
-                <div class="butons">
-                   <a href="Documentos PDF/Diagrama de Flujo Proceso de titulación.pdf" class="btn-1">Diagrama de Flujo</a>
-                  <div class="dropdown">
-  <a href="#" class="btn-1">Formatos para tu proceso de titulación</a>
-  <div class="dropdown-content">
-    <a href="Documentos PDF/Requisitos para la asignación de fecha de examen nivel LICENCIATURA.docx">Requisitos para la asignación de fecha de examen nivel LICENCIATURA.</a>
-    <a href="Documentos PDF/FORMATO LIBERACIÓN DEL TRABAJO Y SOLICITUD DE LECTORES.docx">Formato de liberación del trabajo y solicitud de lectores</a>
-  </div>
-</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-
-    <main class="product container">
-
-
-
-<!-- PROTOCOLO (VA PRIMERO Y CENTRADO) -->
-<div class="product-1 protocolo-destacado">
-    <img src="Imagenes/Protocolo.jpg" alt="">
-    <h3>Protocolo de investigación</h3>
-    <div class="price">
-        <p>El punto de partida de todas las opciones y modalidades de titulación.</p>
-
-        <a href="https://www.canva.com/design/DAHDGIESfdg/mrcuBPwpIPm-sLmmuHEemw/view" class="btn-2" target="_blank">
-        Ver información del protocolo
-        </a>
-
-        <a href="Documentos PDF/DOCUMENTO PARA EL ALUMNO_SOLICITUD REGISTRO PROTOCOLO DEL TRABAJO DE TITULACIÓN.docx"class="btn-2" target="_blank">
-        Descargar Formato de Registro (ALUMNO)
-        <a href="Documentos PDF/DOCUMENTO PARA EL ASESOR_SOLICITUD REGISTRO PROTOCOLO DEL TRABAJO DE TITULACIÓN.docx"class="btn-2" target="_blank">
-        Descargar Formato de Registro (ASESOR)
-        </a>
+      <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+        <a href="#modalidades">Modalidades</a>
+        <a href="#ruta">Mi ruta</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a class="nav-cta" href="#contacto">Contacto ↗</a>
+      </nav>
     </div>
-</div>
+  </header>
 
+  <main>
 
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
 
-
-        
-    <h2>Todas las modalidades de titulación</h2>
-
-
-    <input 
-type="text" 
-id="buscador" 
-placeholder="Buscar modalidad..." 
-onkeyup="buscarModalidad()"
-class="buscador">
-
-
-    <div class="product-content">
-
-
-        <div class="product-1 animar">
-            <img src="Imagenes/Tesis.webp" alt="">
-            <h3>Tesis</h3>
-            <div class="price">
-                <p>Convierte preguntas en respuestas.</p>
-                <a href="https://canva.link/cj9hv4rwcxs5gph" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+      <div class="container hero-inner">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          Guía de titulación · Licenciatura en Administración Educativa
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Texto Publicado.jpg" alt="">
-            <h3>Texto publicado</h3>
-            <div class="price">
-                <p>Comparte tu conocimiento con el mundo</p>
-                <a href="https://canva.link/g6x1ipixqmpnsmt" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+        <h1>Tu siguiente capítulo <span>comienza aquí.</span></h1>
+
+        <p>
+          Explora las modalidades de titulación, encuentra documentos
+          útiles y organiza tu camino hacia el título profesional.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#modalidades">
+            Explorar modalidades →
+          </a>
+          <a class="button secondary" href="#ruta">
+            Conocer mi ruta
+          </a>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Tesina.jpg" alt="">
-            <h3>Tesina</h3>
-            <div class="price">
-                <p>Ideas claras, resultados concretos</p>
-                <a href="https://canva.link/i96hsa5s90qt6ml" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+        <div class="hero-stats">
+          <div>
+            <strong>17</strong>
+            <span>Modalidades disponibles</span>
+          </div>
+          <div>
+            <strong>01</strong>
+            <span>Un camino a tu meta</span>
+          </div>
+          <div>
+            <strong>UPN</strong>
+            <span>Área Académica 1</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALIDADES -->
+    <section class="section" id="modalidades">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="kicker">DESCUBRE TUS OPCIONES</span>
+            <h2>Encuentra tu modalidad ideal</h2>
+            <p>
+              Busca por nombre, filtra por categoría o guarda
+              tus favoritas para revisarlas después.
+            </p>
+          </div>
+          <div class="count-pill" id="resultCount" aria-live="polite"></div>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Recuperación de experiencia Laboral.webp" alt="">
-            <h3>Recuperación de experiencia profesional</h3>
-            <div class="price">
-                <p>Tu experiencia, tu título.</p>
-                <a href="https://canva.link/jqi0upaxokaojqh" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+        <div class="filter-bar">
+          <label class="search-field">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search"
+              placeholder="Buscar una modalidad..."
+              autocomplete="off"
+              aria-label="Buscar modalidad">
+          </label>
+
+          <div class="chips" role="group" aria-label="Filtrar modalidades">
+            <button class="chip active" data-filter="Todas" aria-pressed="true">Todas</button>
+            <button class="chip" data-filter="Investigación y textos" aria-pressed="false">Investigación y textos</button>
+            <button class="chip" data-filter="Trayectorias" aria-pressed="false">Trayectorias</button>
+            <button class="chip" data-filter="Proyectos" aria-pressed="false">Proyectos</button>
+            <button class="chip" data-filter="Favoritas" aria-pressed="false">♡ Favoritas</button>
+          </div>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Historia de vida.jpg" alt="">
-            <h3>Historia de vida</h3>
-            <div class="price">
-                <p>Tu trayectoria contada única.</p>
-                <a href="https://canva.link/0lv48c4l5itky85" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+        <!-- JavaScript genera las 17 tarjetas aquí -->
+        <div class="mode-grid" id="modeGrid"></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <span>⌕</span>
+          <h3>No encontramos resultados</h3>
+          <p>Prueba con otra palabra o selecciona una categoría diferente.</p>
+          <button class="button secondary" id="clearFilters" type="button">
+            Limpiar filtros
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUTA DE TITULACIÓN -->
+    <section class="section section-alt" id="ruta">
+      <div class="container route-layout">
+
+        <div>
+          <span class="kicker">ORGANIZA TU AVANCE</span>
+          <h2>Tu ruta hacia la titulación</h2>
+          <p>
+            Marca los pasos conforme avances. Esta guía es orientativa;
+            verifica los requisitos vigentes con tu coordinación y
+            Servicios Escolares.
+          </p>
+
+          <div class="progress-meta">
+            <strong id="progressText">0 de 6 pasos</strong>
+            <span id="progressPercent">0%</span>
+          </div>
+
+          <div class="progress-track" id="progressBar"
+            role="progressbar"
+            aria-label="Avance de la ruta"
+            aria-valuemin="0"
+            aria-valuemax="6"
+            aria-valuenow="0">
+            <div id="progressFill"></div>
+          </div>
+
+          <button type="button" class="text-button" id="resetProgress">
+            Reiniciar progreso
+          </button>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Analisis de testimonio.jpg" alt="">
-            <h3>Análisis de testimonio</h3>
-            <div class="price">
-                <p>Profundiza en cada voz.</p>
-                <a href="https://canva.link/xt059bhx7h5y90q" class="btn-2">Detalles de esta modalidad</a>
+        <div class="route-card" id="steps">
+          <label class="step">
+            <input type="checkbox" data-step="0">
+            <span>
+              <strong>Explorar las modalidades</strong>
+              <small>Identifica cuál se adapta a tu trabajo.</small>
+            </span>
+          </label>
+
+          <label class="step">
+            <input type="checkbox" data-step="1">
+            <span>
+              <strong>Elegir asesor o asesora</strong>
+              <small>Consulta el procedimiento correspondiente.</small>
+            </span>
+          </label>
+
+          <label class="step">
+            <input type="checkbox" data-step="2">
+            <span>
+              <strong>Preparar y registrar el protocolo</strong>
+              <small>Revisa los formatos de registro.</small>
+            </span>
+          </label>
+
+          <label class="step">
+            <input type="checkbox" data-step="3">
+            <span>
+              <strong>Desarrollar y concluir el trabajo</strong>
+              <small>Con acompañamiento de tu asesoría.</small>
+            </span>
+          </label>
+
+          <label class="step">
+            <input type="checkbox" data-step="4">
+            <span>
+              <strong>Realizar revisión y trámites</strong>
+              <small>Verifica lectores, votos y documentación.</small>
+            </span>
+          </label>
+
+          <label class="step">
+            <input type="checkbox" data-step="5">
+            <span>
+              <strong>Solicitar fecha de examen</strong>
+              <small>Confirma requisitos con Servicios Escolares.</small>
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <span class="kicker">DOCUMENTOS ÚTILES</span>
+        <h2>Recursos para tu proceso</h2>
+        <p class="section-intro">
+          Consulta los materiales originales y formatos de apoyo.
+        </p>
+
+        <div class="resource-grid">
+          <article class="resource featured">
+            <div class="resource-icon">✎</div>
+            <h3>Protocolo de investigación</h3>
+            <p>
+              Consulta información de referencia y descarga los
+              formatos para estudiante y asesoría.
+            </p>
+            <div class="resource-links">
+              <a href="https://www.canva.com/design/DAHDGIESfdg/mrcuBPwpIPm-sLmmuHEemw/view" target="_blank" rel="noopener noreferrer">
+                Ver información ↗
+              </a>
+              <a href="Documentos PDF/DOCUMENTO PARA EL ALUMNO_SOLICITUD REGISTRO PROTOCOLO DEL TRABAJO DE TITULACIÓN.docx">
+                Formato para estudiante ↓
+              </a>
+              <a href="Documentos PDF/DOCUMENTO PARA EL ASESOR_SOLICITUD REGISTRO PROTOCOLO DEL TRABAJO DE TITULACIÓN.docx">
+                Formato para asesoría ↓
+              </a>
             </div>
+          </article>
+
+          <article class="resource">
+            <div class="resource-icon">⇢</div>
+            <h3>Diagrama de flujo</h3>
+            <p>Visualiza las etapas del proceso de titulación.</p>
+            <a href="Documentos PDF/Diagrama de Flujo Proceso de titulación.pdf">
+              Consultar documento ↗
+            </a>
+          </article>
+
+          <article class="resource">
+            <div class="resource-icon">▤</div>
+            <h3>Reglamentos y libros</h3>
+            <p>Consulta las referencias institucionales.</p>
+            <div class="resource-links">
+              <a href="Documentos PDF/Reglamento general para titulación.pdf">Reglamento general ↗</a>
+              <a href="Documentos PDF/Libro Verde.pdf">Libro Verde ↗</a>
+              <a href="Documentos PDF/Libro Azul.pdf">Libro Azul ↗</a>
+            </div>
+          </article>
+
+          <article class="resource">
+            <div class="resource-icon">▣</div>
+            <h3>Formatos de trámite</h3>
+            <p>Documentos relacionados con lectores y examen profesional.</p>
+            <div class="resource-links">
+              <a href="Documentos PDF/FORMATO LIBERACIÓN DEL TRABAJO Y SOLICITUD DE LECTORES.docx">
+                Liberación y lectores ↓
+              </a>
+              <a href="Documentos PDF/Requisitos para la asignación de fecha de examen nivel LICENCIATURA.docx">
+                Requisitos de examen ↓
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section section-alt" id="preguntas">
+      <div class="container faq-wrap">
+        <div>
+          <span class="kicker">TE ACOMPAÑAMOS</span>
+          <h2>Preguntas frecuentes</h2>
+          <p>
+            Respuestas orientativas para empezar.
+            Los procedimientos oficiales pueden actualizarse.
+          </p>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Trayectoria formativa.jpeg" alt="">
-            <h3>Trayectoria formativa</h3>
-            <div class="price">
-                <p>Refleja todo lo aprendido.</p>
-                <a href="https://canva.link/2mk5l9ay6tiofu1" class="btn-2">Detalles de esta modalidad</a>
-            </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿Cómo elijo mi modalidad de titulación?</summary>
+            <p>
+              Explora las modalidades disponibles, revisa sus
+              características y consulta con tu asesoría o coordinación.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Dónde encuentro el formato de protocolo?</summary>
+            <p>
+              En la sección de recursos encontrarás formatos para
+              estudiante y asesoría, además de información introductoria.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Quién me orienta sobre los requisitos vigentes?</summary>
+            <p>
+              Tu coordinación académica y las áreas institucionales
+              correspondientes pueden confirmar los requisitos actuales.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Se guardan mis favoritos y mi avance?</summary>
+            <p>
+              Sí, en el almacenamiento local de este navegador.
+              Si borras sus datos o cambias de dispositivo,
+              podrían perderse.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <span class="kicker">TU OPINIÓN IMPORTA</span>
+          <h2>¿Tienes dudas o sugerencias?</h2>
+          <p>
+            Comparte tus comentarios para seguir mejorando
+            este espacio de orientación.
+          </p>
+          <div class="notice">
+            Este formulario utiliza FormSubmit, un servicio externo.
+            No compartas datos sensibles.
+          </div>
         </div>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Ensayo.webp" alt="">
-            <h3>Ensayo</h3>
-            <div class="price">
-                <p>Expresa tus ideas con estilo.</p>
-                <a href="https://canva.link/nrvyqc5lu1aqbjd" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+        <form class="contact-form"
+          action="https://formsubmit.co/210920048@alumnos.upn.mx"
+          method="POST">
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Monografia.jpg" alt="">
-            <h3>Monografía</h3>
-            <div class="price">
-                <p>Investiga y organiza tu tema</p>
-                <a href="https://canva.link/ed671qng7uxni09" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <label for="name">Nombre</label>
+          <input id="name" name="nombre" placeholder="Tu nombre" required maxlength="100">
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Informe academico.avif" alt="">
-            <h3>Informe académico</h3>
-            <div class="price">
-                <p>Documenta tu conocimiento profesional.</p>
-                <a href="https://canva.link/74rtnv7rohihr27" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="correo"
+            placeholder="tu@correo.com" required maxlength="150">
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Proyecto de intervención.png" alt="">
-            <h3>Proyecto de intervención</h3>
-            <div class="price">
-                <p>Actúa y deja huella.</p>
-                <a href="https://canva.link/czhwr4ja44ido2l" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <label for="topic">Motivo</label>
+          <select id="topic" name="motivo">
+            <option>Duda sobre titulación</option>
+            <option>Opinión o sugerencia</option>
+            <option>Problema con un enlace</option>
+          </select>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Proyecto de gestion escolar.avif" alt="">
-            <h3>Proyecto de gestión escolar</h3>
-            <div class="price">
-                <p>Mejora tu entorno educativo.</p>
-                <a href="https://canva.link/fm2coyh96v49jdm" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="mensaje" rows="5"
+            placeholder="Escribe aquí tu mensaje..."
+            required maxlength="2000"></textarea>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Proyecto pedagogico de accion docente.webp" alt="">
-            <h3>Proyecto pedagógico de acción docente</h3>
-            <div class="price">
-                <p>Innovación en enseñanza.</p>
-                <a href="https://canva.link/to55zu9rmq9ym42" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <input type="hidden" name="_subject"
+            value="Contacto desde Rumbo a tu tesis">
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Innovacion educativa.jpg" alt="">
-            <h3>Innovación educativa</h3>
-            <div class="price">
-                <p>Ideas que transforman la educación.</p>
-                <a href="https://canva.link/ntfjfp5xztaapet" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
+          <button class="button primary" type="submit">
+            Enviar mensaje →
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <div class="product-1 animar">
-            <img src="Imagenes/Desarrollo educativo.webp" alt="">
-            <h3>Desarrollo educativo</h3>
-            <div class="price">
-                <p>Crecimiento en cada etapa.</p>
-                <a href="https://canva.link/sl3ieq3vcp84533" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
-
-        <div class="product-1 animar">
-            <img src="Imagenes/Trayectoria profesional.jpg" alt="">
-            <h3>Trayectoria profesional</h3>
-            <div class="price">
-                <p>Tu camino reflejado.</p>
-                <a href="https://canva.link/9x2pomkj2uu5l7b" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
-        
-        <div class="product-1 animar">
-            <img src="Imagenes/Informe de intervencion.avif" alt="">
-            <h3>Informe de intervención</h3>
-            <div class="price">
-                <p>Analiza acciones reales y mejora la gestión educativa.</p>
-                <a href="https://canva.link/1amju2gnblm7m38" class="btn-2">Detalles de esta modalidad</a>
-            </div>
-        </div>
-
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>✦ RUMBO A TU TESIS</strong>
+        <p>Un espacio de orientación para tu trayectoria académica.</p>
+      </div>
+      <div>
+        <a href="#inicio">Volver al inicio ↑</a>
+        <a href="https://area1.upnvirtual.edu.mx"
+          target="_blank" rel="noopener noreferrer">
+          Área Académica 1 ↗
+        </a>
+      </div>
     </div>
-</main>
+    <div class="container footer-note">
+      Sitio informativo de apoyo. Consulta siempre las fuentes
+      institucionales para confirmar trámites y requisitos.
+    </div>
+  </footer>
 
-
-
-
-    
-   <section class="contact container">
-
-<div class="contact-content">
-
-<h3>¡Déjanos tu opinión para seguir mejorando!</h3>
-
-<form action="https://formsubmit.co/210920048@alumnos.upn.mx" method="POST">
-
-<input type="text" name="nombre" placeholder="Tu nombre" required>
-
-<input type="email" name="correo" placeholder="Tu correo electrónico" required>
-
-<textarea 
-name="mensaje" 
-placeholder="Escribe aquí tu opinión o sugerencia sobre la página..." 
-required></textarea>
-
-<input type="submit" class="btn-3" value="Enviar opinión">
-
-</form>
-
-</div>
-
-</section>
-
-
-
-<!-- ================= SECCIÓN DUDAS ================= -->
-
-<section class="dudas container">
-
-<h2>¿Tienes dudas sobre tu titulación?</h2>
-
-<p>
-Si tienes preguntas sobre el protocolo, las modalidades de titulación o el proceso de egreso,
-puedes enviarnos tu duda y con gusto te orientaremos.
-</p>
-
-<form action="https://formsubmit.co/210920048@alumnos.upn.mx" method="POST">
-
-<input type="text" name="nombre" placeholder="Tu nombre" required>
-
-<input type="email" name="correo" placeholder="Tu correo electrónico" required>
-
-<textarea name="mensaje" placeholder="Escribe aquí tu duda..." required></textarea>
-
-<button type="submit" class="btn-3">Enviar duda</button>
-
-</form>
-
-</section>
-
-
-
-    <footer class="footer container">
-
-        <div class="link">
-            <a href="#" class="logo">¡RUMBO A TU TESIS!</a>
-
-        </div>
-
-    </footer>
-    
-    <script>
-
-const elementos = document.querySelectorAll('.animar');
-
-function mostrarElementos(){
-
-const alturaPantalla = window.innerHeight;
-
-elementos.forEach(elemento =>{
-
-const distancia = elemento.getBoundingClientRect().top;
-
-if(distancia < alturaPantalla - 100){
-elemento.classList.add("visible");
-}
-
-});
-
-}
-
-window.addEventListener("scroll", mostrarElementos);
-mostrarElementos();
-
-</script>
-
-<script>
-
-function buscarModalidad(){
-
-let input = document.getElementById("buscador").value.toLowerCase();
-let modalidades = document.getElementsByClassName("product-1");
-
-for(let i=0;i<modalidades.length;i++){
-
-let texto = modalidades[i].innerText.toLowerCase();
-
-if(texto.includes(input)){
-modalidades[i].style.display="block";
-}else{
-modalidades[i].style.display="none";
-}
-
-}
-
-}
-
-</script>
-
-
-
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
-
 </html>
